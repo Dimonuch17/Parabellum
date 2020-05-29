@@ -1,0 +1,416 @@
+/* ----- Fonts ----- */
+
+@font-face {
+	font-family: 'Adobe Garamond Pro';
+	src: url('../fonts/AGaramondPro-Regular.eot');
+	src: url('../fonts/AGaramondPro-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/AGaramondPro-Regular.woff2') format('woff2'),
+	url('../fonts/AGaramondPro-Regular.woff') format('woff'),
+	url('../fonts/AGaramondPro-Regular.ttf') format('truetype'),
+	url('../fonts/AGaramondPro-Regular.svg#AGaramondPro-Regular') format('svg');
+}
+@font-face {
+	font-family: 'SangBleu Kingdom 300';
+	src: url('../fonts/SangBleuKingdom-Light.eot');
+	src: url('../fonts/SangBleuKingdom-Light.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/SangBleuKingdom-Light.woff2') format('woff2'),
+	url('../fonts/SangBleuKingdom-Light.woff') format('woff'),
+	url('../fonts/SangBleuKingdom-Light.ttf') format('truetype'),
+	url('../fonts/SangBleuKingdom-Light.svg#SangBleuKingdom-Light') format('svg');
+}
+@font-face {
+	font-family: 'SangBleu Kingdom 400';
+	src: url('../fonts/SangBleuKingdom-Regular.eot');
+	src: url('../fonts/SangBleuKingdom-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/SangBleuKingdom-Regular.woff2') format('woff2'),
+	url('../fonts/SangBleuKingdom-Regular.woff') format('woff'),
+	url('../fonts/SangBleuKingdom-Regular.ttf') format('truetype'),
+	url('../fonts/SangBleuKingdom-Regular.svg#SangBleuKingdom-Regular') format('svg');
+}
+@font-face {
+	font-family: 'Neue Haas Unica Pro 300';
+	src: url('../fonts/NeueHaasUnicaPro-Light.eot');
+	src: url('../fonts/NeueHaasUnicaPro-Light.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/NeueHaasUnicaPro-Light.woff2') format('woff2'),
+	url('../fonts/NeueHaasUnicaPro-Light.woff') format('woff'),
+	url('../fonts/NeueHaasUnicaPro-Light.ttf') format('truetype'),
+	url('../fonts/NeueHaasUnicaPro-Light.svg#NeueHaasUnicaPro-Light') format('svg');
+}
+@font-face {
+	font-family: 'Neue Haas Unica Pro 400';
+	src: url('../fonts/NeueHaasUnicaPro-Regular.eot');
+	src: url('../fonts/NeueHaasUnicaPro-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/NeueHaasUnicaPro-Regular.woff2') format('woff2'),
+	url('../fonts/NeueHaasUnicaPro-Regular.woff') format('woff'),
+	url('../fonts/NeueHaasUnicaPro-Regular.ttf') format('truetype'),
+	url('../fonts/NeueHaasUnicaPro-Regular.svg#NeueHaasUnicaPro-Regular') format('svg');
+}
+
+/* ----- Specification ----- */
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background: #000;
+}
+
+.container {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+div, p, a, form, input, textarea, span, button {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+} 
+
+p {
+	margin: 0;
+	line-height: 1.5em;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+	font-family: 'Neue Haas Unica Pro 300';
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+	font-family: 'SangBleu Kingdom 300';
+	text-transform: uppercase;
+}
+
+a, a:hover {
+	color: #d1d1d1;
+	font-size: 15px;
+	text-decoration: none;
+}
+
+.d-flex {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+/*--- Меню гамбургер ---*/
+
+.menu-open {
+	border: none;
+	background: transparent;
+	position: absolute;
+	display: none;
+	outline: none;
+}
+
+.menu-open span {
+	margin: 6px 0; 
+	width: 30px;
+	color: #fff;
+	display: block;
+	-margin-top: 7px;
+	border: 1px solid #fff;
+}
+
+.menu-opened {
+	display: block;
+	text-align: center;
+	background: rgba(99, 33, 33, 0.77);
+	border-radius: 7px;
+	width: 70%;
+	margin: 0 auto;
+	padding-bottom: 10px;
+}
+
+.menu-opened .menu__item {
+	padding-bottom: 3px;
+	border-bottom: 1px solid #ccc;
+	width: 80%;
+	margin: 0 auto 5px;
+}
+
+.menu-opened .menu__item a {
+	color: #d9dc17;
+}
+
+
+/* ----- First screen ----- */
+
+.header {
+	position: relative;
+}
+
+
+.logo {
+	margin: 0 auto;
+	display: block;
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+
+.nav {
+	position: absolute;
+	z-index: 999;
+	width: 100%;
+	padding-bottom: 10px;
+	background: rgba(0,0,0,0.5);
+}
+
+nav.stirce {
+	position: fixed;
+	background: rgba(0,0,0,0.8);
+	box-shadow: 0 0 50px rgba(0,0,0,1);
+	transition: all 3s ease;
+}
+
+.nav-menu {
+	margin: 0 auto;
+	justify-content: space-between;
+	width: 445px;
+}
+
+.menu__item a {
+	transition: all 0.3s ease;
+}
+
+.menu__item a:hover {
+	color: yellow;
+}
+
+.change__text {
+	padding-top: 125px;
+	padding-bottom: 150px;
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	font-family: 'SangBleu Kingdom 400';
+}
+
+.change__text_hov {
+	font-size: 5vw;
+	color: #fff;
+	line-height: 2.4em;
+	text-transform: uppercase;
+}
+
+p.change__text_hov span.change__text_a {
+	cursor: pointer;
+	color: #ffffff;
+	display: inline;
+}
+
+p.change__text_hov:hover  span.change__text_a {
+	cursor: pointer;
+	color: #ffffff;
+	display: none;
+
+}
+p.change__text_hov span.change__text_b {
+	cursor: pointer;
+	color: #ffffff;
+	display: none;
+}
+
+p.change__text_hov:hover  span.change__text_b {
+	cursor: pointer;
+	color: #ffffff;
+	display: inline;
+}
+
+.fullscreen_bg {
+	max-height: 100vh;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+}
+
+.fullscreen_bg:after {
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	display: block;
+	background: rgba(0,0,0,0.5);
+}
+
+.video {
+	position: relative;
+	padding-bottom: 56.25%;
+}
+
+.video-haeder {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+}
+
+
+/* ----- Second screen ----- */
+
+.about {
+	background: #000;
+	color: #fff;
+	text-align: center;
+	padding-top: 145px;
+	padding-bottom: 285px;
+}
+
+.title h2 {
+	font-size: 45px;
+}
+
+.title h2:after {
+	content: '';
+	border-bottom: 1px solid #aaa;
+	display: block;
+	width: 115px;
+	margin: 0 auto;
+	padding-top: 10px;
+	margin-bottom: 20px;
+}
+
+.title p {
+	font-size: 25px;
+}
+
+.about__text {
+	margin: 0 auto;
+	width: 910px;
+	margin-top: 37px;
+	font-family: 'SangBleu Kingdom 300';
+}
+
+.about__text p {
+	color: #d1d1d1;
+	font-size: 20px;
+	margin-bottom: 40px;
+}
+
+.about__text p:nth-child(1) {
+	font-size: 25px;
+	color: #fff;
+	font-family: 'SangBleu Kingdom 400';
+}
+
+.about-video video {
+	width: 900px;
+	margin-top: 30px;
+	outline: none;
+}
+
+
+/* ----- Third screen ----- */
+
+.espionage {
+	text-align: center;
+	padding-top: 215px;
+	padding-bottom: 230px;
+	background: url(../img/espionage_challenge_1.png) no-repeat fixed center center / cover;
+}
+
+.title_white {
+	color: #fff;
+}
+
+
+/* ----- Fourth screen ----- */
+
+.security {
+	padding-top: 70px;
+	padding-bottom: 263px;
+	color: #fff;
+	background: #000;
+}
+
+.security__title {
+	text-align: center;
+	margin: 0 auto; 
+	width: 790px;
+}
+
+.security__title h3 {
+	font-family: 'SangBleu Kingdom 300';
+	text-transform: none;
+	font-size: 25px;
+}
+
+.security__title p {
+	font-size: 20px;
+	margin-top: 45px;
+	line-height: 1.7em;
+	font-family: 'SangBleu Kingdom 300';
+}
+
+
+/* ----- Fifth screen ----- */
+
+.desert {
+	background: url(../img/espionage_challenge_2.png) no-repeat fixed center center / cover;
+}
+
+
+/* ----- Sixth screen ----- */
+
+.footer {
+	color: #fff;
+	background: #000;
+	padding-bottom: 85px;
+}
+
+.footer__text {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer__text p {
+	font-size: 35px;
+	font-family: 'Neue Haas Unica Pro 400';
+	margin-right: 20px;
+	display: block;
+}
+
+.footer__text p:after {
+	content: ' ';
+	-display: block;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-left: 20px;
+	height: 100px;
+	border-right: 2px solid #fff;
+}
+
+.footer__link {
+	display: flex;
+	flex-direction: column;
+	line-height: 1.5em;
+}
+
+.footer__link a {
+	font-size: 17px;
+}
+
+.footer__link a:hover {
+	color: #fff;
+}
+
